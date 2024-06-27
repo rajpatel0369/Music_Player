@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  height: 85%;
+  width: 100%;
+  background-color: #141414;
+  display: flex;
+  padding: 5vw 10vw;
+}
+#left {
+  height: 100%;
+  width: 45%;
+  background-color: #333;
+  background-position: top;
+  background-size: cover;
+}
+#right {
+  height: 100%;
+  width: 55%;
+  padding: 0 3vw;
+  /* background-color: blue; */
+}
+#right h3 {
+  font-size: 40px;
+}
+#all-songs {
+  /* background-color: red; */
+  height: 85%;
+  margin-top: 30px;
+}
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #5a5a5a;
+  padding: 15px 10px;
+}
+.song-card:hover {
+  background-color: #313131;
+}
+.song-card:nth-last-child(1) {
+  border-bottom: 1px solid #5a5a5a;
+}
+.song-card .part1 {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.song-card img {
+  height: 55px;
+  width: 55px;
+  margin-right: 20px;
+}
+.song-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.song-card h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+#player {
+  height: 15%;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#player h3 {
+  background-color: rgba(30, 30, 30, 0.747);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#player h3 i {
+  font-size: 24px;
+}
+#player h3 :active {
+  scale: 0.93;
+}
